@@ -1,0 +1,27 @@
+7. A partir do exercício 6 (vetor classificado) solicitar um valor qualquer e verificar a sua existência no vetor (utilizar pesquisa binária).
+
+Pseudo-Código
+Algoritmo: Fbusca(inteiro vrt[]) inteiro
+inicio
+	inteiro: inicial, meio, final, busca;
+	boolean: nroLocalizado;
+	
+	inicial ← 1;
+	final ← 20;
+	nroLocalizado ← Falso;
+
+	enquanto ((inicial <= final) e não nroLocalizado)faça
+		meio ← (inicial + final) / 2;
+		se(vrtB[meio] = busca)
+		 então
+			 nroLocalizado ← Verdadeiro;
+		 fimse;
+		se(vrtB[meio] > busca)
+		 então
+			final ← meio – 1;
+		 senão
+			inicial ← meio + 1;
+		fimse;
+	fimenquanto
+  retorna: nroLocalizado;
+fim
