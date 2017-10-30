@@ -1,0 +1,37 @@
+1. Criar e coletar um vetor [50] inteiro. Calcular e exibir:
+a. A média dos valores entre 10 e 200;
+b. A soma dos números ímpares.
+
+Pseudo-Código
+Algoritmo: Vetor50
+inicio
+      tipo V =  vetor [1..50] inteiros;
+	    V: vtr;
+      inteiro: i;
+	    real: md;
+	
+	    s ← 0;
+	    md ← 0;
+
+	    para(i=1;i<=50;i++)faça
+		      leia: vtr[i];
+		      se(vtr[i] >= 10 e vtr[i] <= 200)
+		        então
+			        s ← s + vtr[i];
+			        md += 1;
+		      fimse;
+	    fimpara;
+	
+	    md ← s / md;
+	    escreva: md;
+	    s ← 0;
+	    
+      para(i=1;i<=50;i++)faça
+		      se(vtr[i] % 2 <> 0)
+	 	        então
+			        s ← s + vtr[i];
+		      fimse;
+	    fimpara;
+	    escreva: s;
+fim
+
