@@ -1,0 +1,51 @@
+
+4. Criar e coletar em um vetor [30] real e calcular e exibir:
+a. A média do grupo;
+b. A quantidade de notas acima do grupo;
+c. As posições dos valores abaixo da média do grupo.
+
+Pseudo-Código
+algoritmo: VetorMedia
+início
+	tipo V = vetor [1..30] reais;
+	V: vtr, vtrPosicoes;
+	real: s,md;
+	inteiro: i,j,nAcima;
+	
+	s ← 0;
+	nAcima ← 0;
+	j ← 1;
+	
+	
+	para(i=1;i<=30;i++)faça
+		leia: vtr[i];
+		s ← s + vtr[i];
+	fimpara;
+	
+	md ← i;
+	md ← s / md;
+	
+	escreva: md; //a. A média do grupo
+	
+	para(i=1;i<=30;i++)faça
+		se(vtr[i] > md)
+		então
+			nAcima += 1;
+		fimse;
+	fimpara;
+	
+	escreva: nAcima; //A quantidade de notas acima do grupo
+	
+	para(i=1;i<=30;i++)faça
+		se(vtr[i] < md)
+		então	
+			vtrPosicoes[j] ← i;
+			j += 1;
+		fimse;	
+	fimpara;
+
+	para(i=1;i<=j;i++)faça
+		 escreva: vtrPosicoes[i]; //As posições dos valores abaixo da média do grupo.
+	fimpara;
+	
+fim
