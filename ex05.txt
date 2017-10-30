@@ -1,0 +1,25 @@
+5. Criar e coletar em um vetor [20] inteiro. Calcule e exiba, segundo:
+					
+10
+∑ (A [1] – A [21–1] )
+i = 1
+
+Pseudo-Código
+algoritmo:
+inicio
+	tipo V =  vetor [1..20] de inteiros;
+	V: vtr;
+	inteiro: i;
+
+	j ← 21;
+	
+	para(i=1;i<=20;i++)faça
+		leia: vtr[i];	//coleta valores int no vetor  vtr[]
+	fimpara;
+
+	para(i=1;i<=10;i++)faça
+		s ← s + (vtr[i] - vtr[j-i]);
+	fimpara;
+	
+	escreva:  s;
+fim
