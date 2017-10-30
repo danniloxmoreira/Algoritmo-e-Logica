@@ -1,0 +1,43 @@
+2.Criar e coletar um vetor [100] inteiro e exibir:
+a. O maior e o menor valor,
+b. A média dos valores.
+
+Pseudo-Código
+algoritmo Vetor100
+início
+      tipo V = vetor [1..100] inteiros;
+	    V: vtr;
+	    inteiro: i,s,MA,ME;
+	    real: md;
+	
+	    MA ← 0;
+	    s ← 0;
+
+	    para(i=1;i<=100;i++)faça
+		      leia: vtr[i];
+		      s += vtr[i];
+	    fimpara
+	
+	    md ← i;
+	    md ← s / md; //média dos valores.
+
+	    para(i=1;i<=100;i++)faça
+		      se(vtr[i] > MA)
+ 		        então
+			          MA ← vtr[i]; //define maior
+		        fimse;
+	    fimpara;
+
+	    ME ← MA;
+
+	    para(i=1;i<=100;i++)faça
+		    se(vtr[i] < ME)
+ 		      então
+			        ME ← vtr[i]; //define menor
+		    fimse;
+	    fimpara;
+	
+	    escreva: MA;
+	    escreva: ME;
+	    escreva: md;
+fim
