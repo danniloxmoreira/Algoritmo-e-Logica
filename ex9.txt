@@ -1,0 +1,14 @@
+9. Criar e carregar uma matriz [4][4] com valores aleatórios, sendo que a
+diagonal principal terá seus dados carregados no programa segundo:
+1
+  4
+    16
+      64
+
+11 12 13 14
+21 22 23 24
+31 32 33 34
+41 42 43 44
+
+// 11 22 33 44 
+   1  4  16 64
