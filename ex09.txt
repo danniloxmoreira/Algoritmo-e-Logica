@@ -11,31 +11,29 @@ início
 	tipo M =  matriz [1..4, 1..4] de inteiros;
 	M: mtz;
 	inteiro: i,j;
-	
-  aux = 1;
-  
-	//Lê os valores de cada posição na Matriz
-  para(i=1;i<=4;i++)faça
-	  para(j=1;j<=4;j++)faça
+	aux = 1;
+
+	para(i=1;i<=4;i++)faça
+		para(j=1;j<=4;j++)faça
 			se(i == j)
-        entao
-          se(i == 1 e j == 1)
-            mtz[i, j] = aux;
-          fimse;
-          aux *= 4;
-          mtz[i, j] = aux;
-        senao
-          mtz[i, j] = rand();
-      fimse;
-    fimpara;
-  fimpara;
+				entao
+					se(i == 1 e j == 1)
+						mtz[i, j] = aux;
+					fimse;
+					aux *= 4;
+					mtz[i, j] = aux;
+				senao
+					mtz[i, j] = rand();
+				fimse;
+		fimpara;
+	fimpara;
   
-  para(i=1;i<=4;i++)faça
-	  para(j=1;j<=4;j++)faça
-        escreva: mtz[i, j];
-    fimpara;
-  fimpara;
+	para(i=1;i<=4;i++)faça
+		para(j=1;j<=4;j++)faça
+			escreva: mtz[i, j];
+		fimpara;
+	fimpara;
 
 
-// 11 22 33 44 
-   1  4  16 64
+//11 22 33 44 
+//1  4  16 64
