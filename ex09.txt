@@ -19,9 +19,10 @@ início
 				entao
 					se(i == 1 e j == 1)
 						mtz[i, j] = aux;
+					senao
+						aux *= 4;
+						mtz[i, j] = aux;
 					fimse;
-					aux *= 4;
-					mtz[i, j] = aux;
 				senao
 					mtz[i, j] = rand();
 				fimse;
