@@ -16,16 +16,17 @@ início
 	para(i=1;i<=4;i++)faça
 		para(j=1;j<=4;j++)faça
 			se(i == j)
+			entao
+				se(i == 1 e j == 1)
 				entao
-					se(i == 1 e j == 1)
-						mtz[i, j] = aux;
-					senao
-						aux *= 4;
-						mtz[i, j] = aux;
-					fimse;
+					mtz[i, j] = aux;
 				senao
-					mtz[i, j] = rand();
+					aux *= 4;
+					mtz[i, j] = aux;
 				fimse;
+			senao
+				mtz[i, j] = rand();
+			fimse;
 		fimpara;
 	fimpara;
   
