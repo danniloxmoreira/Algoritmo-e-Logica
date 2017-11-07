@@ -1,0 +1,39 @@
+11. Criar uma matriz [8][8] inteiro e o programa irá carregar segundo:
+
+1 1 1 1 1 1 1 1
+1 2 2 2 2 2 2 1
+1 2 3 3 3 3 2 1
+1 2 3 4 4 3 2 1
+1 2 3 4 4 3 2 1
+1 2 3 3 3 3 2 1
+1 2 2 2 2 2 2 1
+1 1 1 1 1 1 1 1
+
+Pseudo-Código
+algoritmo: qtdProdutos
+início
+	tipo M =  matriz [1..8, 1..8] de inteiros;
+	M: mtz;
+	inteiro: i,j;
+	aux = 1;
+
+	para(i=1;i<=8;i++)faça
+		para(j=1;j<=8;j++)faça
+
+		fimpara;
+	fimpara;
+  
+	para(i=1;i<=8;i++)faça
+		para(j=1;j<=8;j++)faça
+			escreva: mtz[i, j];
+		fimpara;
+fimpara;
+
+11 12 13 14 15 16 17 18
+21 22 23 24 25 26 27 28
+31 32 33 34 35 36 37 38
+41 42 43 44 45 46 49 48
+51 52 53 54 55 56 57 58
+61 62 63 64 65 66 67 68
+71 72 73 74 75 76 77 78
+81 82 83 84 85 86 87 88
