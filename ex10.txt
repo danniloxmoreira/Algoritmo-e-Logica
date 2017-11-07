@@ -1,0 +1,24 @@
+10. Criar uma matriz [8][8] onde o programa irá carregar segundo:
+
+casa    1   2   3   4   ..  *Exibir a soma 
+valor   1   2   4   8   ..   dos valores
+
+Pseudo-Código
+algoritmo: qtdProdutos
+início
+	tipo M =  matriz [1..8, 1..8] de inteiros;
+	M: mtz;
+	inteiro: i,j;
+	aux = 1;
+
+	para(i=1;i<=8;i++)faça
+		para(j=1;j<=8;j++)faça
+
+		fimpara;
+	fimpara;
+  
+	para(i=1;i<=8;i++)faça
+		para(j=1;j<=8;j++)faça
+			escreva: mtz[i, j];
+		fimpara;
+fimpara;
