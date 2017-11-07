@@ -19,7 +19,23 @@ início
 
 	para(i=1;i<=8;i++)faça
 		para(j=1;j<=8;j++)faça
-
+			se((i==1 ou i==8) ou (j==1 ou j==8))
+			entao
+				mtz[i, j] = 1;
+			senao
+				se((i==2 ou i==7) ou (j==2 ou j==7))
+				entao
+					mtz[i, j] = 2;
+				senao
+					se((i==3 ou i==6) ou (j==3 ou j==6))
+					entao
+						mtz[i, j] = 3;
+					senao
+						se((i==4 ou i==5) ou (j==4 ou j==5))
+							mtz[i, j] = 4;
+					fimse;
+				fimse;
+			fimse;
 		fimpara;
 	fimpara;
   
@@ -27,7 +43,7 @@ início
 		para(j=1;j<=8;j++)faça
 			escreva: mtz[i, j];
 		fimpara;
-fimpara;
+	fimpara;
 
 11 12 13 14 15 16 17 18
 21 22 23 24 25 26 27 28
