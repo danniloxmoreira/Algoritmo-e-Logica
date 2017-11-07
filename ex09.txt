@@ -11,19 +11,19 @@ início
 	tipo M =  matriz [1..4, 1..4] de inteiros;
 	M: mtz;
 	inteiro: i,j;
+	
+	i = 1;
+	j = 1;
 	aux = 1;
+	
+	mtz[i, j] = aux;
 
 	para(i=1;i<=4;i++)faça
-		para(j=1;j<=4;j++)faça
+		para(j=2;j<=4;j++)faça
 			se(i == j)
 			entao
-				se(i == 1 e j == 1)
-				entao
-					mtz[i, j] = aux;
-				senao
-					aux *= 4;
-					mtz[i, j] = aux;
-				fimse;
+				aux *= 4;
+				mtz[i, j] = aux;
 			senao
 				mtz[i, j] = rand();
 			fimse;
