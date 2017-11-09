@@ -1,0 +1,17 @@
+
+
+    escolha()
+            caso 1:
+                  FcarregaCedulas();
+            pare;
+            caso 2:
+                  FretiradaCedulas();
+            pare;
+            caso 3:
+                  Festatisticas();
+            pare;
+            caso 9:
+            pare;
+            padrão:
+                  escreva: "opção invalida"
+            pare;

@@ -1,0 +1,38 @@
+3. Criar e coletar valores inteiros nos vetores VT1[3] e VT2[3].
+Concatenar esses valores em um 3o vetor (VT3[6]) e mostrar os seus dados.
+P. ex: VT1[1][2][3] VT2[4[5][6] VT3[1][2][3][4][5][6]
+
+Pseudo-Código
+algoritmo: VetorConcat_Principal
+início
+	    tipo V1 = vetor [1..3] inteiros;
+	    V1: vtrA;
+
+	    tipo V2 = vetor [4..6] inteiros;
+	    V2: vtrB;
+	
+	    tipo V3 = vetor [1..6] inteiros;
+	    V3: vtrC;
+
+	    para(i=1;i<=6;i++)faça
+		      se(i<=3)
+		        entao
+			        leia: vtrA[i];
+		        senão
+              leia: vtrB[i];
+		      fimse;
+	    fimpara
+
+	    para(i=1;i<=6;i++)faça
+		      se(i<=3)
+		        entao
+			        vtrC[i] ← vtrA[i];
+		        senão
+			        vtrC[i] ← vtrB[i];
+		      fimse;
+	    fimpara
+	
+	    para(i=1;i<=6;i++)faça
+		      escreva: vtrC[i];
+	    fimpara
+fim

@@ -1,0 +1,81 @@
+12. Carregar códigos das peças em um tabuleiro de xadres, onde:
+Código: 1       2       3       4       5       6   7
+Peças:  Peão    Torre   Bispo   Cavalo  Rainha  Rei Vazio
+
+Calcular e mostrar a soma das peças do tabuleiro,
+Não pode utilizar Estrutura de Decisão e Escolha Caso na contagem das peças
+
+Pseudo-Código
+algoritmo: carregaTabuleiro
+início
+	tipo M =  matriz [1..8, 1..8] de inteiros;
+	M: mtz;
+	inteiro: i,j;
+	
+	aux = 1;
+	s = ;
+	
+	para(i=1;i<=8;i++)faça
+		para(j=1;j<=8;j++)faça
+			se((i==1 ou i==8) e (j==1 ou j==8))
+			entao
+				mtz[i, j] = 2;
+			senao
+				se((i==1 ou i==8) e (j==2 ou j==7))
+				entao
+					mtz[i, j] = 4;
+				senao
+					se((i==1 ou i==8) e (j==3 ou j==6))
+					entao
+						mtz[i, j] = 3;
+					senao
+						se((i==1 ou i==8) e j==4)
+						entao
+							mtz[i, j] = 6;
+						senao
+							se((i==1 ou i==8) e j==5)
+							entao
+								mtz[i, j] = 5;
+							senao
+								se(i==2 ou i==7)
+								entao
+									mtz[i, j] = 1;
+								senao
+									se(i>=3 e i<=6)
+									entao
+										mtz[i, j] = 7;
+									fimse;
+								fimse;
+							fimse;
+						fimse;
+					fimse;
+				fimse;
+			fimse;
+		fimpara;
+	fimpara;
+  
+	para(i=1;i<=8;i++)faça
+		para(j=1;j<=8;j++)faça
+			
+		fimpara;
+    fimpara;
+
+//A matriz
+11 12 13 14 15 16 17 18
+21 22 23 24 25 26 27 28
+31 32 33 34 35 36 37 38
+41 42 43 44 45 46 49 48
+51 52 53 54 55 56 57 58
+61 62 63 64 65 66 67 68
+71 72 73 74 75 76 77 78
+81 82 83 84 85 86 87 88
+
+//Como as peças devem ser carregadas
+2  4  3  6  5  3  4  2
+1  1  1  1  1  1  1  1
+7  7  7  7  7  7  7  7
+7  7  7  7  7  7  7  7
+7  7  7  7  7  7  7  7
+7  7  7  7  7  7  7  7
+1  1  1  1  1  1  1  1
+2  4  3  6  5  3  4  2

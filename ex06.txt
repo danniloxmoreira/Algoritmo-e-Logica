@@ -1,0 +1,35 @@
+6. Criar e coletar em um vetor [20] com números aleatórios. Classificar este vetor em ordem crescente e mostre os dados.
+
+Pseudo-Código
+algoritmo: ordVetor
+inicio
+	tipo V =  vetor [1..20] inteiro;
+	V: vtr;
+	inteiro: i,j,aux;
+	
+	aux ← 0;
+	
+	para(i=1;i<=20;i++)faça
+		vtr[i] ← random();
+	fimpara;
+  
+  para(i=1;i<=20;i++)faça
+		escreva = vtr[i];
+	fimpara; 
+
+	para(i=2;i<=20;i++)faça
+		para(j=20;j>=1;j--)faça
+			se(vtr[j-1] > vtr[j])
+			então
+				aux = vtr[j-1];
+				vtr[j-1] = v[j];
+				vtr[j] = aux;
+			fimse;
+		fimpara;
+	fimpara;
+
+	para(i=1;i<20;i++)faça
+		escreva: vtr[i];
+	fimpara;
+
+fim
