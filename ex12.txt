@@ -17,33 +17,33 @@ início
 	
 	para(i=1;i<=8;i++)faça
 		para(j=1;j<=8;j++)faça
-			se((i==1 ou i==8) e (j==1 ou j==8))
+			se(i>=3 e i<=6)
 			entao
-				mtz[i, j] = 2;
+				mtz[i, j] = 7;
 			senao
-				se((i==1 ou i==8) e (j==2 ou j==7))
+				se(i==2 ou i==7)
 				entao
-					mtz[i, j] = 4;
+					mtz[i, j] = 1;
 				senao
-					se((i==1 ou i==8) e (j==3 ou j==6))
+					se((i==1 ou i==8) e (j==1 ou j==8))
 					entao
-						mtz[i, j] = 3;
+						mtz[i, j] = 2;
 					senao
-						se((i==1 ou i==8) e j==4)
+						se((i==1 ou i==8) e (j==2 ou j==7))
 						entao
-							mtz[i, j] = 6;
+							mtz[i, j] = 4;
 						senao
-							se((i==1 ou i==8) e j==5)
+							se((i==1 ou i==8) e (j==3 ou j==6))
 							entao
-								mtz[i, j] = 5;
+								mtz[i, j] = 3;
 							senao
-								se(i==2 ou i==7)
+								se((i==1 ou i==8) e j==4)
 								entao
-									mtz[i, j] = 1;
+									mtz[i, j] = 6;
 								senao
-									se(i>=3 e i<=6)
+									se((i==1 ou i==8) e j==5)
 									entao
-										mtz[i, j] = 7;
+										mtz[i, j] = 5;
 									fimse;
 								fimse;
 							fimse;
@@ -58,7 +58,7 @@ início
 		para(j=1;j<=8;j++)faça
 			
 		fimpara;
-    fimpara;
+    	fimpara;
 
 //A matriz
 11 12 13 14 15 16 17 18
