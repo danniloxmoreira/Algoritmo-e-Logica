@@ -1,17 +1,97 @@
+Pseudocódigo
 
+Algoritmo: cxEletr_Main
+inicio
+    inteiro: sw;
+    
+        escreva: "Digite 1 para Carregar notas";
+        leia: sw;
+        escreva: "Digite 2 para Retirar notas";
+        leia: sw;
+        escreva: "Digite 3 para Visualizar Estatisticas";
+        leia: sw;
+        escreva: "Digite 9 para Encerrar";
+        leia: sw;
+        
+        escolha(sw)
+                caso 1:
+                      FcarregaNotas();
+                pare;
+                
+                caso 2:
+                      FretiradaCedulas();
+                pare;
+                
+                caso 3:
+                      Festatisticas();
+                pare;
+                
+                caso 9:
+                            
+                pare;
+                padrão:
+                      escreva: "opção invalida"
+                pare;
+fim
 
-    escolha()
-            caso 1:
-                  FcarregaCedulas();
-            pare;
-            caso 2:
-                  FretiradaCedulas();
-            pare;
-            caso 3:
-                  Festatisticas();
-            pare;
-            caso 9:
-            pare;
-            padrão:
-                  escreva: "opção invalida"
-            pare;
+Algoritmo: FcarregaNotas();
+    inteiro: n;
+    
+        escreva: "Digite 1 para Carregar notas de 2";
+        leia: n;
+        escreva: "Digite 2 para Carregar notas de 5";
+        leia: n;
+        escreva: "Digite 3 para Carregar notas de 10";
+        leia: n;
+        escreva: "Digite 4 para Carregar notas de 20";
+        leia: n;
+        escreva: "Digite 5 para Carregar notas de 50";
+        leia: n;
+        escreva: "Digite 6 para Carregar notas de 100";
+        leia: n;
+        escreva: "Digite 9 para Menu Principal";
+        leia: n;
+        
+        escolha(n)
+                caso 1:
+                      escreva: "Quatidade de notas";
+                      leia: q;
+                      vtr[n] += (q * 2);
+                pare;
+                
+                caso 2:
+                      escreva: "Quatidade de notas";
+                      leia: q;
+                      vtr[n] += (q * 5);
+                pare;
+                
+                caso 3:
+                      escreva: "Quatidade de notas";
+                      leia: q;
+                      vtr[n] += (q * 10);
+                pare;
+                
+                caso 4:
+                      escreva: "Quatidade de notas";
+                      leia: q;
+                      vtr[n] += (q * 20);
+                pare;
+                
+                caso 5:
+                      escreva: "Quatidade de notas";
+                      leia: q;
+                      vtr[n] += (q * 50);
+                pare;
+                
+                caso 6:
+                      escreva: "Quatidade de notas";
+                      leia: q;
+                      vtr[n] += (q * 100);
+                pare;
+                
+                caso 9:
+                            
+                pare;
+                padrão:
+                      escreva: "opção invalida"
+                pare;
