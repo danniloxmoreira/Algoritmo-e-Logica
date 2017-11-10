@@ -2,7 +2,12 @@ Pseudocódigo
 
 Algoritmo: cxEletr_Main
 inicio
-    inteiro: sw;
+    tipo V =  vetor [1..6] de inteiros;
+    V: vtr;
+    
+    inteiro: sw,total;
+    
+    total = 0;
     
         escreva: "Digite 1 para Carregar notas";
         leia: sw;
@@ -34,7 +39,8 @@ inicio
                 pare;
 fim
 
-Algoritmo: FcarregaNotas();
+Algoritmo: FcarregaNotas(inteiro vtr[], total) de inteiros
+inicio
     inteiro: n;
     
         escreva: "Digite 1 para Carregar notas de 2";
@@ -90,8 +96,18 @@ Algoritmo: FcarregaNotas();
                 pare;
                 
                 caso 9:
-                            
+                       escreva: "Voltar ou Menu Principal";
+                       para(i=1;i<=6;i++)faca
+                                total += vtr[i]
+                       fimpara;     
                 pare;
+                
                 padrão:
                       escreva: "opção invalida"
                 pare;
+fimsegue;
+
+Algoritmo: FretiradaNotas();
+inicio
+    inteiro: r;
+    
