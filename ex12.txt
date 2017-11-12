@@ -59,7 +59,7 @@ início
 			aux = 7 - mtz[i, j];
 			s += aux;
 		fimpara;
-    fimpara;
+    	fimpara;
 
 //A matriz
 11 12 13 14 15 16 17 18
@@ -80,3 +80,10 @@ início
 7  7  7  7  7  7  7  7
 1  1  1  1  1  1  1  1
 2  4  3  6  5  3  4  2
+
+
+
+vet[mat[x,y]]++;
+
+
+mat[vet[i],y];
